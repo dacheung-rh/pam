@@ -68,6 +68,8 @@ java -Dorg.kie.server.router.config.file=<CONFIG_FILE> -jar rhpam-7.13.5-smart-r
 
 curl http://localhost:9000/mgmt/list
 
+curl http://192.168.1.92:9000/mgmt/list
+
 
 curl -s -X POST -H 'Content-type: application/json' -H 'X-KIE-Content-Type: json' -d '{"timerDuration":"9s"}' -u kieserver:kieserver1! http://localhost:9000/containers/example:timer-test:1.1/processes/timer-test.TimerProcess/instances
 
@@ -103,7 +105,6 @@ java -Dorg.kie.server.router.name=kierouter1 \
      -Dorg.kie.server.router.tls.keystore=KeyStore.jks \
      -Dorg.kie.server.router.tls.keystore.password=changeme \
      -Dorg.kie.server.router.tls.keystore.keyalias=kierouter.cheers.local \
-     -Dorg.kie.server.router.url.external=kierouter.cheers.local\
      -Dorg.kie.server.router.tls.port=9443 \
      -jar bamoe-8.0.5-smart-router.jar
 
@@ -121,3 +122,56 @@ java -Dorg.kie.server.router.name=kierouter1 \
     {"mortgage-process": ["http://localhost:8080/kie-server/services/rest/server"]}
   ]
 }[
+
+##########################################################################
+mkdir -p /opt/smartrouter/
+
+cat <<\EOF > /opt/smartrouter/start-kie-router.sh
+#!/bin/bash
+
+#JAVA_HOME=/path/to/jvmdir
+WORKDIR=/opt/smartrouter
+JAVA_OPTIONS=" -Xms512m -Xmx512m -server "
+
+cd $WORKDIR
+"${JAVA_HOME}/bin/java" $JAVA_OPTIONS \
+     -Dorg.kie.server.router.name=kierouter1 \
+     -Dorg.kie.server.router.host=192.168.1.92 \
+     -Dorg.kie.server.router.port=9000 \
+     -Dorg.kie.server.router.tls.keystore=KeyStore.jks \
+     -Dorg.kie.server.router.tls.keystore.password=changeme \
+     -Dorg.kie.server.router.tls.keystore.keyalias=kierouter.cheers.local \
+     -Dorg.kie.server.router.tls.port=9443 \
+     -jar bamoe-8.0.5-smart-router.jar
+EOF
+
+sudo -i
+chmod +x /opt/smartrouter/start-kie-router.sh
+
+cat <<EOF > /etc/systemd/system/smartrouter.service
+[Unit]
+Description=Kie Router service
+After=syslog.target network.target
+[Service]
+SuccessExitStatus=143
+User=admin
+Group=admin
+
+Type=simple
+
+ExecStart=/opt/smartrouter/start-kie-router.sh
+ExecStop=/bin/kill -15 $MAINPID
+Restart=on-failure
+RestartSec=30
+StartLimitInterval=350
+StartLimitBurst=10
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+
+sudo systemctl daemon-reload
+sudo systemctl start smartrouter.service
+sudo systemctl status smartrouter.service
+
