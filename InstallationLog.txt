@@ -1,0 +1,2099 @@
+Directory: /opt/jboss-eap-7.4 backed up to: /opt/jboss-eap-7.4.backup
+SYSTEM_sun_boot_class_path = /home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/resources.jar:/home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/rt.jar:/home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/sunrsasign.jar:/home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/jsse.jar:/home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/jce.jar:/home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/charsets.jar:/home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/jfr.jar:/home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/classes
+jdbc.driver.jar-1-path = /home/admin/Downloads/ojdbc8.jar
+APP_NAME = IBM Business Automation Manager Open Editions Installer
+jdbc.datasource.username = PAM
+vault.alias = vault
+eap.install = true
+role.processadmin = false
+SYSTEM_java_runtime_version = 1.8.0_422-b05
+SYSTEM_user_dir = /home/admin
+eap.maximum.version.minor = 0
+SYSTEM_line_separator = 
+
+role.restall = true
+jws.pooling.datasource.name = kieServerPoolingDS
+SYSTEM_java_runtime_name = OpenJDK Runtime Environment
+TargetPanel.dir.windows = ${USER_HOME}\RHPAM-8.0.5\jboss-eap
+jdbc.datasource.jndiname = java:/OracleDS
+product.name = bamoe
+APP_URL = http://www.jboss.org
+vault.keystoreloc.default = ${INSTALL_PATH}${SYSTEM_file_separator}vault.keystore
+SYSTEM_java_vendor_url = https://www.redhat.com/
+SYSTEM_java_ext_dirs = /home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+eap.supported.version.designation = GA
+rhpam.user = rhpamAdmin
+org.kie.server.controller = http://localhost:8080/business-central/rest/controller
+jdbc.datasource.maxpoolsize = 20
+ISO3_LANG = eng
+org.drools.server.ext.disabled = false
+SYSTEM_sun_boot_library_path = /home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/amd64
+jdbc.datasource.connectionurl = jdbc:oracle:thin:@//192.168.1.190:1521/pam
+eap.supported.version.minor = 4
+SYSTEM_java_vendor_url_bug = https://access.redhat.com/support/cases/
+SYSTEM_os_version = 4.18.0-553.8.1.el8_10.x86_64
+org.kie.server.business-central.controller = http://localhost:8080/business-central/rest/controller
+SYSTEM_java_vm_specification_vendor = Oracle Corporation
+preexisting.saml.allowed.keystore.types = JKS,CASEEXACTJKS
+role.analyst = false
+jdbc.driver.xads.name = oracle.jdbc.xa.client.OracleXADataSource
+JBossDatasourceConfigPanel.securitytype.value = Username-Password
+jws.datasource.maxwait = 10000
+SYSTEM_java_endorsed_dirs = /home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre/lib/endorsed
+TargetPanel.mustExist = true
+ssl.allowed.keystore.types = JKS,CASEEXACTJKS
+eap.maximum.version.designation = GA
+SYSTEM_java_vm_specification_name = Java Virtual Machine Specification
+jdbc.driver.module.name = oracle.jdbc
+standalone-full-ha.xml.vault.preexisting = false
+org.kie.server.kie-server.controller = http://localhost:8080/controller/rest/controller
+installerMode = CLI
+installation.logfile = installation/InstallationLog.txt
+jws.maximum.version = 9.0.7.redhat-16
+user.final.roles = admin,kie-server,rest-all
+SYSTEM_file_encoding_pkg = sun.io
+eap.maximum.version.major = 8
+SYSTEM_file_encoding = UTF-8
+SYSTEM_java_vm_info = mixed mode
+platform.readable.name = BAMOE
+install.ldap = false
+SYSTEM_java_util_logging_manager = org.jboss.logmanager.LogManager
+backup.created = true
+org.jbpm.ui.server.ext.disabled = false
+eap.supported.version.min.micro = 10
+vault.encrdir.default = ${INSTALL_PATH}${SYSTEM_file_separator}vault${SYSTEM_file_separator}
+SYSTEM_java_class_path = bamoe-installer-8.0.5.jar
+SYSTEM_java_vm_vendor = Red Hat, Inc.
+USER_HOME = /home/admin
+SYSTEM_java_class_version = 52.0
+SYSTEM_os_name = Linux
+default.eap.version = 7.4
+SYSTEM_user_timezone = America/New_York
+eap.maximum.version.micro = 0
+vault.alias.default = vault
+SYSTEM_sun_cpu_endian = little
+SYSTEM_user_language = en
+vault.preexisting = false
+role.user = false
+APPLICATIONS_DEFAULT_ROOT = /home/admin
+SYSTEM_java_vm_specification_version = 1.8
+SYSTEM_java_library_path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+SYSTEM_user_home = /home/admin
+INSTALL_PATH = /opt/jboss-eap-7.4
+org.jbpm.server.ext.disabled = false
+SYSTEM_sun_cpu_isalist = 
+jws.datasource.maxidle = 30
+role.kieserver = true
+role.developer = false
+vault.salt = 9K0RhWtW
+jdbc.driver.vendor.name = oracle
+vault.keystoreloc = ${INSTALL_PATH}${SYSTEM_file_separator}vault.keystore
+FieldNotEqualValidator.check = rhpam.user,rhpam.password
+standalone-full.xml.vault.preexisting = false
+IP_ADDRESS = 127.0.0.1
+SYSTEM_java_awt_graphicsenv = sun.awt.X11GraphicsEnvironment
+eap.supported.version.major = 7
+SYSTEM_awt_toolkit = sun.awt.X11.XToolkit
+SYSTEM_java_vm_name = OpenJDK 64-Bit Server VM
+vault.requires.secret.key = true
+org.kie.server.id = default-kieserver
+controller.user = controllerUser
+SYSTEM_java_specification_maintenance_version = 5
+vault.salt.default = 8675309K
+custom.kie.server.install = true
+jdbc.driver.dir.struct = modules/oracle/jdbc/main
+jdbc.datasource.xa.selectmethod = cursor
+SYSTEM_sun_arch_data_model = 64
+SYSTEM_sun_management_compiler = HotSpot 64-Bit Tiered Compilers
+eap.supported.version.micro = 10
+keystore.preexisting = false
+jdbc.datasource.xa = Datasource
+jdbc.datasource.xa.protocol = Tds
+SYSTEM_sun_java_command = bamoe-installer-8.0.5.jar -console
+jws.install = false
+kie.server.controller.location = http://localhost:8080
+FILE_SEPARATOR = /
+preexisting.vault.allowed.keystore.types = JKS,CASEEXACTJKS,JCEKS
+APP_VER = 8.0.5
+SYSTEM_file_separator = /
+SYSTEM_java_specification_version = 1.8
+jdbc.datasource.securitydomain = securityDomain
+HOST_NAME = localhost.localdomain
+SYSTEM_sun_os_patch_level = unknown
+SYSTEM_java_home = /home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre
+standalone.xml.vault.preexisting = false
+jdbc.datasource.minpoolsize = 5
+vault.allowed.keystore.types = JCEKS
+JAVA_HOME = /home/admin/jdks/java-1.8.0-openjdk-portable-1.8.0.422.b05-1.portable.jdk.el.x86_64/jre
+JDKCheckPanel.minVersion = 1.6.0
+jws.datasource.name = kieServerDS
+SYSTEM_sun_java_launcher = SUN_STANDARD
+SYSTEM_sun_jnu_encoding = UTF-8
+SYSTEM_user_country = US
+SYSTEM_os_arch = amd64
+org.kie.dmn.server.ext.disabled = false
+jdbc.driver.jar-number-dynamic-elements = 1
+jdbc.driver.name = oracle
+org.jbpm.case.server.ext.disabled = false
+SYSTEM_java_specification_vendor = Oracle Corporation
+izpack.app.version = 8.0.5
+SYSTEM_java_specification_name = Java Platform API Specification
+jws.minimum.version = 9.0.7.redhat-16
+jdbc.datasource.xa.url = jdbc:oracle:oci8:@tc
+TargetPanel.dir.macosx = ${USER_HOME}/RHPAM-8.0.5/jboss-eap
+Installer.splash.duration = 2000
+advanced.config.selected = true
+USER_NAME = admin
+role.administrator = true
+jws.datasource.maxpoolsize = 100
+SYSTEM_java_io_tmpdir = /tmp
+SYSTEM_user_name = admin
+SYSTEM_java_vendor = Red Hat, Inc.
+TargetPanel.dir.unix = ${USER_HOME}/RHPAM-8.0.5/jboss-eap
+jdbc.install = true
+vault.itercount.default = 50
+CLASS_PATH = bamoe-installer-8.0.5.jar
+standalone-osgi.xml.vault.preexisting = false
+PRE_EXISTING_INSTALL_PATH = true
+jdbc.datasource.name = KieServerDS
+SYSTEM_sun_io_unicode_encoding = UnicodeLittle
+SYSTEM_java_version = 1.8.0_422
+jdbc.driver.customproperties = 
+role.manager = false
+SYSTEM_java_vm_version = 25.422-b05
+standalone-ha.xml.vault.preexisting = false
+vault.itercount = 50
+ShowCreateDirectoryMessage = false
+org.kie.swagger.server.ext.disabled = false
+vault.encrdir = ${INSTALL_PATH}${SYSTEM_file_separator}vault${SYSTEM_file_separator}
+org.kie.prometheus.server.ext.disabled = false
+jdbc.driver.hibernate.dialect = org.hibernate.dialect.Oracle10gDialect
+SYSTEM_java_awt_printerjob = sun.print.PSPrinterJob
+SYSTEM_path_separator = :
+jdbc.datasource.xa.server = localhost
+Installation values are saved in /opt/jboss-eap-7.4/installation/InstallationLog.txt file.
+Replacing text: MaxMetaspaceSize=256m with text: MaxMetaspaceSize=1024m in file:
+/opt/jboss-eap-7.4/bin/appclient.conf
+/opt/jboss-eap-7.4/bin/appclient.conf.bat
+/opt/jboss-eap-7.4/bin/appclient.conf.ps1
+/opt/jboss-eap-7.4/bin/standalone.conf
+/opt/jboss-eap-7.4/bin/standalone.conf.bat
+/opt/jboss-eap-7.4/bin/standalone.conf.ps1
+/opt/jboss-eap-7.4/bin/domain.conf
+/opt/jboss-eap-7.4/bin/domain.conf.bat
+/opt/jboss-eap-7.4/bin/domain.conf.ps1
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/appclient.conf. Lines changed: 1
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/appclient.conf.bat. Lines changed: 1
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/appclient.conf.ps1. Lines changed: 1
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/standalone.conf. Lines changed: 0
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/standalone.conf.bat. Lines changed: 1
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/standalone.conf.ps1. Lines changed: 1
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/domain.conf. Lines changed: 1
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/domain.conf.bat. Lines changed: 1
+Wrote file with replaced text: /opt/jboss-eap-7.4/bin/domain.conf.ps1. Lines changed: 1
+Starting operation: -genseckey with keystore: /opt/jboss-eap-7.4/vault.keystore
+
+Warning:
+The JCEKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore /opt/jboss-eap-7.4/vault.keystore -destkeystore /opt/jboss-eap-7.4/vault.keystore -deststoretype pkcs12".
+Operation: -genseckey with keystore: /opt/jboss-eap-7.4/vault.keystore was successful.
+Starting embedded server with config: standalone.xml
+/system-property=org.kie.example:read-attribute(name=value)
+/system-property=org.kie.example:add(value=true)
+/system-property=org.jbpm.designer.perspective:read-attribute(name=value)
+/system-property=org.jbpm.designer.perspective:add(value=full)
+/system-property=designerdataobjects:read-attribute(name=value)
+/system-property=designerdataobjects:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.user:read-attribute(name=value)
+/system-property=org.kie.server.user:add(value=controllerUser)
+/system-property=org.kie.server.pwd:read-attribute(name=value)
+/system-property=org.kie.server.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.location:read-attribute(name=value)
+/system-property=org.kie.server.location:add(value=http://localhost:8080/kie-server/services/rest/server)
+/system-property=org.kie.server.id:read-attribute(name=value)
+/system-property=org.kie.server.id:add(value=default-kieserver)
+/system-property=org.drools.server.ext.disabled:read-attribute(name=value)
+/system-property=org.drools.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.ui.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.ui.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.case.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.case.server.ext.disabled:add(value=false)
+/system-property=org.kie.dmn.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.dmn.server.ext.disabled:add(value=false)
+/system-property=org.kie.swagger.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.swagger.server.ext.disabled:add(value=false)
+/system-property=org.kie.prometheus.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.prometheus.server.ext.disabled:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.controller:read-attribute(name=value)
+/system-property=org.kie.server.controller:add(value=http://localhost:8080/business-central/rest/controller)
+/system-property=org.kie.server.controller.user:read-attribute(name=value)
+/system-property=org.kie.server.controller.user:add(value=controllerUser)
+/system-property=org.kie.server.controller.pwd:read-attribute(name=value)
+/system-property=org.kie.server.controller.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/core-service=vault:add(vault-options=[("KEYSTORE_URL" => "${jboss.home.dir}/vault.keystore"), ("KEYSTORE_PASSWORD" => "MASK-3/EtpOzSH8zuAJusiIIPdM"), ("KEYSTORE_ALIAS" => "vault"), ("SALT" => "9K0RhWtW"), ("ITERATION_COUNT" => "50"), ("ENC_FILE_DIR" => "${jboss.home.dir}/vault")])
+Vault installation successful.
+/subsystem=elytron/credential-store=kie-credential-store:add(location=credentials.ks, relative-to=jboss.server.config.dir, credential-reference={clear-text="MASK-1545iWOekoj/NX2fBLUIpU;12345678;200"}, create=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Credential store installation successful.
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "local")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authorization" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "undefine-attribute",
+    "name" => "default-realm"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-remove",
+    "name" => "realms",
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "groups-to-roles"
+    }
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("properties-realm" => "ApplicationRealm")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("filesystem-realm" => "ApplicationRealm")
+    ],
+    "operation" => "add",
+    "path" => "kie-fs-realm-users",
+    "relative-to" => "jboss.server.config.dir"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("simple-role-decoder" => "from-roles-attribute")
+    ],
+    "operation" => "add",
+    "attribute" => "role"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-add",
+    "name" => "realms",
+    "index" => 0,
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "from-roles-attribute"
+    }
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-realm",
+    "value" => "ApplicationRealm"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "permission-mapper",
+    "value" => "default-permission-mapper"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("http-authentication-factory" => "application-http-authentication")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain",
+    "http-server-mechanism-factory" => "global",
+    "mechanism-configurations" => [
+        {
+            "mechanism-name" => "BASIC",
+            "mechanism-realm-configurations" => [{"realm-name" => "ApplicationRealm"}]
+        },
+        {"mechanism-name" => "FORM"}
+    ]
+}
+{
+    "address" => [
+        ("subsystem" => "undertow"),
+        ("application-security-domain" => "other")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain"
+}
+Script /opt/jboss-eap-7.4/cli-scripts/configuration.cli ran successfully.
+Successfully copied JDBC JAR(s). 
+/subsystem=datasources/jdbc-driver=oracle:add(driver-name="oracle",driver-module-name="oracle.jdbc",driver-xa-datasource-class-name="oracle.jdbc.xa.client.OracleXADataSource")
+Successfully installed JDBC driver.
+/subsystem=datasources/data-source=KieServerDS:add(jndi-name="java:/OracleDS",driver-name=oracle,min-pool-size=5,max-pool-size=20,user-name=PAM,password="${VAULT::datasource.KieServerDS::password::1}",exception-sorter-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter,valid-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker,stale-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker,connection-url="jdbc:oracle:thin:@//192.168.1.190:1521/pam"
+Successfully created datasource.
+/system-property=org.kie.server.persistence.ds:read-attribute(name=value)
+/system-property=org.kie.server.persistence.ds:add(value=java:/OracleDS)
+/system-property=org.kie.server.persistence.dialect:read-attribute(name=value)
+/system-property=org.kie.server.persistence.dialect:add(value=org.hibernate.dialect.Oracle10gDialect)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Shut down embedded server.
+Starting embedded server with config: standalone-ha.xml
+/system-property=org.kie.example:read-attribute(name=value)
+/system-property=org.kie.example:add(value=true)
+/system-property=org.jbpm.designer.perspective:read-attribute(name=value)
+/system-property=org.jbpm.designer.perspective:add(value=full)
+/system-property=designerdataobjects:read-attribute(name=value)
+/system-property=designerdataobjects:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.user:read-attribute(name=value)
+/system-property=org.kie.server.user:add(value=controllerUser)
+/system-property=org.kie.server.pwd:read-attribute(name=value)
+/system-property=org.kie.server.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.location:read-attribute(name=value)
+/system-property=org.kie.server.location:add(value=http://localhost:8080/kie-server/services/rest/server)
+/system-property=org.kie.server.id:read-attribute(name=value)
+/system-property=org.kie.server.id:add(value=default-kieserver)
+/system-property=org.drools.server.ext.disabled:read-attribute(name=value)
+/system-property=org.drools.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.ui.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.ui.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.case.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.case.server.ext.disabled:add(value=false)
+/system-property=org.kie.dmn.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.dmn.server.ext.disabled:add(value=false)
+/system-property=org.kie.swagger.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.swagger.server.ext.disabled:add(value=false)
+/system-property=org.kie.prometheus.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.prometheus.server.ext.disabled:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.controller:read-attribute(name=value)
+/system-property=org.kie.server.controller:add(value=http://localhost:8080/business-central/rest/controller)
+/system-property=org.kie.server.controller.user:read-attribute(name=value)
+/system-property=org.kie.server.controller.user:add(value=controllerUser)
+/system-property=org.kie.server.controller.pwd:read-attribute(name=value)
+/system-property=org.kie.server.controller.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/core-service=vault:add(vault-options=[("KEYSTORE_URL" => "${jboss.home.dir}/vault.keystore"), ("KEYSTORE_PASSWORD" => "MASK-3/EtpOzSH8zuAJusiIIPdM"), ("KEYSTORE_ALIAS" => "vault"), ("SALT" => "9K0RhWtW"), ("ITERATION_COUNT" => "50"), ("ENC_FILE_DIR" => "${jboss.home.dir}/vault")])
+Vault installation successful.
+/subsystem=elytron/credential-store=kie-credential-store:add(location=credentials.ks, relative-to=jboss.server.config.dir, credential-reference={clear-text="MASK-1545iWOekoj/NX2fBLUIpU;12345678;200"}, create=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Credential store installation successful.
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "local")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authorization" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "undefine-attribute",
+    "name" => "default-realm"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-remove",
+    "name" => "realms",
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "groups-to-roles"
+    }
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("properties-realm" => "ApplicationRealm")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("filesystem-realm" => "ApplicationRealm")
+    ],
+    "operation" => "add",
+    "path" => "kie-fs-realm-users",
+    "relative-to" => "jboss.server.config.dir"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("simple-role-decoder" => "from-roles-attribute")
+    ],
+    "operation" => "add",
+    "attribute" => "role"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-add",
+    "name" => "realms",
+    "index" => 0,
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "from-roles-attribute"
+    }
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-realm",
+    "value" => "ApplicationRealm"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "permission-mapper",
+    "value" => "default-permission-mapper"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("http-authentication-factory" => "application-http-authentication")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain",
+    "http-server-mechanism-factory" => "global",
+    "mechanism-configurations" => [
+        {
+            "mechanism-name" => "BASIC",
+            "mechanism-realm-configurations" => [{"realm-name" => "ApplicationRealm"}]
+        },
+        {"mechanism-name" => "FORM"}
+    ]
+}
+{
+    "address" => [
+        ("subsystem" => "undertow"),
+        ("application-security-domain" => "other")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain"
+}
+Script /opt/jboss-eap-7.4/cli-scripts/configuration.cli ran successfully.
+/subsystem=datasources/jdbc-driver=oracle:add(driver-name="oracle",driver-module-name="oracle.jdbc",driver-xa-datasource-class-name="oracle.jdbc.xa.client.OracleXADataSource")
+Successfully installed JDBC driver.
+/subsystem=datasources/data-source=KieServerDS:add(jndi-name="java:/OracleDS",driver-name=oracle,min-pool-size=5,max-pool-size=20,user-name=PAM,password="${VAULT::datasource.KieServerDS::password::1}",exception-sorter-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter,valid-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker,stale-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker,connection-url="jdbc:oracle:thin:@//192.168.1.190:1521/pam"
+Successfully created datasource.
+/system-property=org.kie.server.persistence.ds:read-attribute(name=value)
+/system-property=org.kie.server.persistence.ds:add(value=java:/OracleDS)
+/system-property=org.kie.server.persistence.dialect:read-attribute(name=value)
+/system-property=org.kie.server.persistence.dialect:add(value=org.hibernate.dialect.Oracle10gDialect)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Shut down embedded server.
+Starting embedded server with config: standalone-full.xml
+/system-property=org.kie.example:read-attribute(name=value)
+/system-property=org.kie.example:add(value=true)
+/system-property=org.jbpm.designer.perspective:read-attribute(name=value)
+/system-property=org.jbpm.designer.perspective:add(value=full)
+/system-property=designerdataobjects:read-attribute(name=value)
+/system-property=designerdataobjects:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.user:read-attribute(name=value)
+/system-property=org.kie.server.user:add(value=controllerUser)
+/system-property=org.kie.server.pwd:read-attribute(name=value)
+/system-property=org.kie.server.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.location:read-attribute(name=value)
+/system-property=org.kie.server.location:add(value=http://localhost:8080/kie-server/services/rest/server)
+/system-property=org.kie.server.id:read-attribute(name=value)
+/system-property=org.kie.server.id:add(value=default-kieserver)
+/system-property=org.drools.server.ext.disabled:read-attribute(name=value)
+/system-property=org.drools.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.ui.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.ui.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.case.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.case.server.ext.disabled:add(value=false)
+/system-property=org.kie.dmn.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.dmn.server.ext.disabled:add(value=false)
+/system-property=org.kie.swagger.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.swagger.server.ext.disabled:add(value=false)
+/system-property=org.kie.prometheus.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.prometheus.server.ext.disabled:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.controller:read-attribute(name=value)
+/system-property=org.kie.server.controller:add(value=http://localhost:8080/business-central/rest/controller)
+/system-property=org.kie.server.controller.user:read-attribute(name=value)
+/system-property=org.kie.server.controller.user:add(value=controllerUser)
+/system-property=org.kie.server.controller.pwd:read-attribute(name=value)
+/system-property=org.kie.server.controller.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/core-service=vault:add(vault-options=[("KEYSTORE_URL" => "${jboss.home.dir}/vault.keystore"), ("KEYSTORE_PASSWORD" => "MASK-3/EtpOzSH8zuAJusiIIPdM"), ("KEYSTORE_ALIAS" => "vault"), ("SALT" => "9K0RhWtW"), ("ITERATION_COUNT" => "50"), ("ENC_FILE_DIR" => "${jboss.home.dir}/vault")])
+Vault installation successful.
+/subsystem=elytron/credential-store=kie-credential-store:add(location=credentials.ks, relative-to=jboss.server.config.dir, credential-reference={clear-text="MASK-1545iWOekoj/NX2fBLUIpU;12345678;200"}, create=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Credential store installation successful.
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "local")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authorization" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "undefine-attribute",
+    "name" => "default-realm"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-remove",
+    "name" => "realms",
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "groups-to-roles"
+    }
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("properties-realm" => "ApplicationRealm")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("filesystem-realm" => "ApplicationRealm")
+    ],
+    "operation" => "add",
+    "path" => "kie-fs-realm-users",
+    "relative-to" => "jboss.server.config.dir"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("simple-role-decoder" => "from-roles-attribute")
+    ],
+    "operation" => "add",
+    "attribute" => "role"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-add",
+    "name" => "realms",
+    "index" => 0,
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "from-roles-attribute"
+    }
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-realm",
+    "value" => "ApplicationRealm"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "permission-mapper",
+    "value" => "default-permission-mapper"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("http-authentication-factory" => "application-http-authentication")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain",
+    "http-server-mechanism-factory" => "global",
+    "mechanism-configurations" => [
+        {
+            "mechanism-name" => "BASIC",
+            "mechanism-realm-configurations" => [{"realm-name" => "ApplicationRealm"}]
+        },
+        {"mechanism-name" => "FORM"}
+    ]
+}
+{
+    "address" => [
+        ("subsystem" => "undertow"),
+        ("application-security-domain" => "other")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain"
+}
+{
+    "address" => [
+        ("subsystem" => "ejb3"),
+        ("service" => "remote")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "ejb3"),
+        ("service" => "remote")
+    ],
+    "operation" => "add",
+    "connector-ref" => "http-remoting-connector",
+    "thread-pool-name" => "default"
+}
+{
+    "address" => [("subsystem" => "iiop-openjdk")],
+    "operation" => "write-attribute",
+    "name" => "ssl-socket-binding",
+    "value" => "iiop-ssl"
+}
+{
+    "address" => [("subsystem" => "iiop-openjdk")],
+    "operation" => "write-attribute",
+    "name" => "socket-binding",
+    "value" => "iiop"
+}
+{
+    "address" => [
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#"),
+        ("role" => "admin")
+    ],
+    "operation" => "add",
+    "delete-non-durable-queue" => true,
+    "consume" => true,
+    "create-non-durable-queue" => true,
+    "send" => true
+}
+Script /opt/jboss-eap-7.4/cli-scripts/fullha-configuration.cli ran successfully.
+/subsystem=datasources/jdbc-driver=oracle:add(driver-name="oracle",driver-module-name="oracle.jdbc",driver-xa-datasource-class-name="oracle.jdbc.xa.client.OracleXADataSource")
+Successfully installed JDBC driver.
+/subsystem=datasources/data-source=KieServerDS:add(jndi-name="java:/OracleDS",driver-name=oracle,min-pool-size=5,max-pool-size=20,user-name=PAM,password="${VAULT::datasource.KieServerDS::password::1}",exception-sorter-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter,valid-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker,stale-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker,connection-url="jdbc:oracle:thin:@//192.168.1.190:1521/pam"
+Successfully created datasource.
+/system-property=org.kie.server.persistence.ds:read-attribute(name=value)
+/system-property=org.kie.server.persistence.ds:add(value=java:/OracleDS)
+/system-property=org.kie.server.persistence.dialect:read-attribute(name=value)
+/system-property=org.kie.server.persistence.dialect:add(value=org.hibernate.dialect.Oracle10gDialect)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Shut down embedded server.
+Starting embedded server with config: standalone-full-ha.xml
+/system-property=org.kie.example:read-attribute(name=value)
+/system-property=org.kie.example:add(value=true)
+/system-property=org.jbpm.designer.perspective:read-attribute(name=value)
+/system-property=org.jbpm.designer.perspective:add(value=full)
+/system-property=designerdataobjects:read-attribute(name=value)
+/system-property=designerdataobjects:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.user:read-attribute(name=value)
+/system-property=org.kie.server.user:add(value=controllerUser)
+/system-property=org.kie.server.pwd:read-attribute(name=value)
+/system-property=org.kie.server.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.location:read-attribute(name=value)
+/system-property=org.kie.server.location:add(value=http://localhost:8080/kie-server/services/rest/server)
+/system-property=org.kie.server.id:read-attribute(name=value)
+/system-property=org.kie.server.id:add(value=default-kieserver)
+/system-property=org.drools.server.ext.disabled:read-attribute(name=value)
+/system-property=org.drools.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.ui.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.ui.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.case.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.case.server.ext.disabled:add(value=false)
+/system-property=org.kie.dmn.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.dmn.server.ext.disabled:add(value=false)
+/system-property=org.kie.swagger.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.swagger.server.ext.disabled:add(value=false)
+/system-property=org.kie.prometheus.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.prometheus.server.ext.disabled:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.controller:read-attribute(name=value)
+/system-property=org.kie.server.controller:add(value=http://localhost:8080/business-central/rest/controller)
+/system-property=org.kie.server.controller.user:read-attribute(name=value)
+/system-property=org.kie.server.controller.user:add(value=controllerUser)
+/system-property=org.kie.server.controller.pwd:read-attribute(name=value)
+/system-property=org.kie.server.controller.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/core-service=vault:add(vault-options=[("KEYSTORE_URL" => "${jboss.home.dir}/vault.keystore"), ("KEYSTORE_PASSWORD" => "MASK-3/EtpOzSH8zuAJusiIIPdM"), ("KEYSTORE_ALIAS" => "vault"), ("SALT" => "9K0RhWtW"), ("ITERATION_COUNT" => "50"), ("ENC_FILE_DIR" => "${jboss.home.dir}/vault")])
+Vault installation successful.
+/subsystem=elytron/credential-store=kie-credential-store:add(location=credentials.ks, relative-to=jboss.server.config.dir, credential-reference={clear-text="MASK-1545iWOekoj/NX2fBLUIpU;12345678;200"}, create=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Credential store installation successful.
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "local")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authorization" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "undefine-attribute",
+    "name" => "default-realm"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-remove",
+    "name" => "realms",
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "groups-to-roles"
+    }
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("properties-realm" => "ApplicationRealm")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("filesystem-realm" => "ApplicationRealm")
+    ],
+    "operation" => "add",
+    "path" => "kie-fs-realm-users",
+    "relative-to" => "jboss.server.config.dir"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("simple-role-decoder" => "from-roles-attribute")
+    ],
+    "operation" => "add",
+    "attribute" => "role"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-add",
+    "name" => "realms",
+    "index" => 0,
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "from-roles-attribute"
+    }
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-realm",
+    "value" => "ApplicationRealm"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "permission-mapper",
+    "value" => "default-permission-mapper"
+}
+{
+    "address" => [
+        ("subsystem" => "elytron"),
+        ("http-authentication-factory" => "application-http-authentication")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain",
+    "http-server-mechanism-factory" => "global",
+    "mechanism-configurations" => [
+        {
+            "mechanism-name" => "BASIC",
+            "mechanism-realm-configurations" => [{"realm-name" => "ApplicationRealm"}]
+        },
+        {"mechanism-name" => "FORM"}
+    ]
+}
+{
+    "address" => [
+        ("subsystem" => "undertow"),
+        ("application-security-domain" => "other")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain"
+}
+{
+    "address" => [
+        ("subsystem" => "ejb3"),
+        ("service" => "remote")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("subsystem" => "ejb3"),
+        ("service" => "remote")
+    ],
+    "operation" => "add",
+    "connector-ref" => "http-remoting-connector",
+    "thread-pool-name" => "default"
+}
+{
+    "address" => [("subsystem" => "iiop-openjdk")],
+    "operation" => "write-attribute",
+    "name" => "ssl-socket-binding",
+    "value" => "iiop-ssl"
+}
+{
+    "address" => [("subsystem" => "iiop-openjdk")],
+    "operation" => "write-attribute",
+    "name" => "socket-binding",
+    "value" => "iiop"
+}
+{
+    "address" => [
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#"),
+        ("role" => "admin")
+    ],
+    "operation" => "add",
+    "delete-non-durable-queue" => true,
+    "consume" => true,
+    "create-non-durable-queue" => true,
+    "send" => true
+}
+Script /opt/jboss-eap-7.4/cli-scripts/fullha-configuration.cli ran successfully.
+/subsystem=datasources/jdbc-driver=oracle:add(driver-name="oracle",driver-module-name="oracle.jdbc",driver-xa-datasource-class-name="oracle.jdbc.xa.client.OracleXADataSource")
+Successfully installed JDBC driver.
+/subsystem=datasources/data-source=KieServerDS:add(jndi-name="java:/OracleDS",driver-name=oracle,min-pool-size=5,max-pool-size=20,user-name=PAM,password="${VAULT::datasource.KieServerDS::password::1}",exception-sorter-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter,valid-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker,stale-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker,connection-url="jdbc:oracle:thin:@//192.168.1.190:1521/pam"
+Successfully created datasource.
+/system-property=org.kie.server.persistence.ds:read-attribute(name=value)
+/system-property=org.kie.server.persistence.ds:add(value=java:/OracleDS)
+/system-property=org.kie.server.persistence.dialect:read-attribute(name=value)
+/system-property=org.kie.server.persistence.dialect:add(value=org.hibernate.dialect.Oracle10gDialect)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Shut down embedded server.
+Starting embedded server with config: host.xml
+/system-property=org.kie.example:read-attribute(name=value)
+/system-property=org.kie.example:add(value=true)
+/system-property=org.jbpm.designer.perspective:read-attribute(name=value)
+/system-property=org.jbpm.designer.perspective:add(value=full)
+/system-property=designerdataobjects:read-attribute(name=value)
+/system-property=designerdataobjects:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.user:read-attribute(name=value)
+/system-property=org.kie.server.user:add(value=controllerUser)
+/system-property=org.kie.server.pwd:read-attribute(name=value)
+/system-property=org.kie.server.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.location:read-attribute(name=value)
+/system-property=org.kie.server.location:add(value=http://localhost:8080/kie-server/services/rest/server)
+/system-property=org.kie.server.id:read-attribute(name=value)
+/system-property=org.kie.server.id:add(value=default-kieserver)
+/system-property=org.drools.server.ext.disabled:read-attribute(name=value)
+/system-property=org.drools.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.ui.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.ui.server.ext.disabled:add(value=false)
+/system-property=org.jbpm.case.server.ext.disabled:read-attribute(name=value)
+/system-property=org.jbpm.case.server.ext.disabled:add(value=false)
+/system-property=org.kie.dmn.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.dmn.server.ext.disabled:add(value=false)
+/system-property=org.kie.swagger.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.swagger.server.ext.disabled:add(value=false)
+/system-property=org.kie.prometheus.server.ext.disabled:read-attribute(name=value)
+/system-property=org.kie.prometheus.server.ext.disabled:add(value=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/system-property=org.kie.server.controller:read-attribute(name=value)
+/system-property=org.kie.server.controller:add(value=http://localhost:8080/business-central/rest/controller)
+/system-property=org.kie.server.controller.user:read-attribute(name=value)
+/system-property=org.kie.server.controller.user:add(value=controllerUser)
+/system-property=org.kie.server.controller.pwd:read-attribute(name=value)
+/system-property=org.kie.server.controller.pwd:add(value=vaultedrhpampasswordholder)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+/core-service=vault:add(vault-options=[("KEYSTORE_URL" => "${jboss.home.dir}/vault.keystore"), ("KEYSTORE_PASSWORD" => "MASK-3/EtpOzSH8zuAJusiIIPdM"), ("KEYSTORE_ALIAS" => "vault"), ("SALT" => "9K0RhWtW"), ("ITERATION_COUNT" => "50"), ("ENC_FILE_DIR" => "${jboss.home.dir}/vault")])
+Vault installation successful.
+/profile=default/subsystem=elytron/credential-store=kie-credential-store:add(location=credentials.ks, relative-to=jboss.domain.config.dir, credential-reference={clear-text="MASK-1545iWOekoj/NX2fBLUIpU;12345678;200"}, create=false)
+/profile=full/subsystem=elytron/credential-store=kie-credential-store:add(location=credentials.ks, relative-to=jboss.domain.config.dir, credential-reference={clear-text="MASK-1545iWOekoj/NX2fBLUIpU;12345678;200"}, create=false)
+/profile=full-ha/subsystem=elytron/credential-store=kie-credential-store:add(location=credentials.ks, relative-to=jboss.domain.config.dir, credential-reference={clear-text="MASK-1545iWOekoj/NX2fBLUIpU;12345678;200"}, create=false)
+/profile=ha/subsystem=elytron/credential-store=kie-credential-store:add(location=credentials.ks, relative-to=jboss.domain.config.dir, credential-reference={clear-text="MASK-1545iWOekoj/NX2fBLUIpU;12345678;200"}, create=false)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Credential store installation successful.
+Running command: [jar, cfM, /opt/jboss-eap-7.4/domain/business-central.war, -C, /opt/jboss-eap-7.4/standalone/deployments/business-central.war/, .]
+
+Command success: [jar, cfM, /opt/jboss-eap-7.4/domain/business-central.war, -C, /opt/jboss-eap-7.4/standalone/deployments/business-central.war/, .] completed successfully.
+Running command: [jar, cfM, /opt/jboss-eap-7.4/domain/kie-server.war, -C, /opt/jboss-eap-7.4/standalone/deployments/kie-server.war/, .]
+
+Command success: [jar, cfM, /opt/jboss-eap-7.4/domain/kie-server.war, -C, /opt/jboss-eap-7.4/standalone/deployments/kie-server.war/, .] completed successfully.
+deploy "/opt/jboss-eap-7.4/domain/business-central.war" --all-server-groups
+deploy "/opt/jboss-eap-7.4/domain/kie-server.war" --all-server-groups
+{
+    "address" => [
+        ("host" => "master"),
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("host" => "master"),
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authentication" => "local")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("host" => "master"),
+        ("core-service" => "management"),
+        ("security-realm" => "ApplicationRealm"),
+        ("authorization" => "properties")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "undefine-attribute",
+    "name" => "default-realm"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "undefine-attribute",
+    "name" => "default-realm"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "undefine-attribute",
+    "name" => "default-realm"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "undefine-attribute",
+    "name" => "default-realm"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-remove",
+    "name" => "realms",
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "groups-to-roles"
+    }
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-remove",
+    "name" => "realms",
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "groups-to-roles"
+    }
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-remove",
+    "name" => "realms",
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "groups-to-roles"
+    }
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-remove",
+    "name" => "realms",
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "groups-to-roles"
+    }
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("properties-realm" => "ApplicationRealm")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("properties-realm" => "ApplicationRealm")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("properties-realm" => "ApplicationRealm")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("properties-realm" => "ApplicationRealm")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("filesystem-realm" => "ApplicationRealm")
+    ],
+    "operation" => "add",
+    "path" => "kie-fs-realm-users",
+    "relative-to" => "jboss.domain.config.dir"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("filesystem-realm" => "ApplicationRealm")
+    ],
+    "operation" => "add",
+    "path" => "kie-fs-realm-users",
+    "relative-to" => "jboss.domain.config.dir"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("filesystem-realm" => "ApplicationRealm")
+    ],
+    "operation" => "add",
+    "path" => "kie-fs-realm-users",
+    "relative-to" => "jboss.domain.config.dir"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("filesystem-realm" => "ApplicationRealm")
+    ],
+    "operation" => "add",
+    "path" => "kie-fs-realm-users",
+    "relative-to" => "jboss.domain.config.dir"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("simple-role-decoder" => "from-roles-attribute")
+    ],
+    "operation" => "add",
+    "attribute" => "role"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("simple-role-decoder" => "from-roles-attribute")
+    ],
+    "operation" => "add",
+    "attribute" => "role"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("simple-role-decoder" => "from-roles-attribute")
+    ],
+    "operation" => "add",
+    "attribute" => "role"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("simple-role-decoder" => "from-roles-attribute")
+    ],
+    "operation" => "add",
+    "attribute" => "role"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-add",
+    "name" => "realms",
+    "index" => 0,
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "from-roles-attribute"
+    }
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-add",
+    "name" => "realms",
+    "index" => 0,
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "from-roles-attribute"
+    }
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-add",
+    "name" => "realms",
+    "index" => 0,
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "from-roles-attribute"
+    }
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "list-add",
+    "name" => "realms",
+    "index" => 0,
+    "value" => {
+        "realm" => "ApplicationRealm",
+        "role-decoder" => "from-roles-attribute"
+    }
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-realm",
+    "value" => "ApplicationRealm"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-realm",
+    "value" => "ApplicationRealm"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-realm",
+    "value" => "ApplicationRealm"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-realm",
+    "value" => "ApplicationRealm"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "permission-mapper",
+    "value" => "default-permission-mapper"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "permission-mapper",
+    "value" => "default-permission-mapper"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "permission-mapper",
+    "value" => "default-permission-mapper"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("security-domain" => "ApplicationDomain")
+    ],
+    "operation" => "write-attribute",
+    "name" => "permission-mapper",
+    "value" => "default-permission-mapper"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "elytron"),
+        ("http-authentication-factory" => "application-http-authentication")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain",
+    "http-server-mechanism-factory" => "global",
+    "mechanism-configurations" => [
+        {
+            "mechanism-name" => "BASIC",
+            "mechanism-realm-configurations" => [{"realm-name" => "ApplicationRealm"}]
+        },
+        {"mechanism-name" => "FORM"}
+    ]
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "elytron"),
+        ("http-authentication-factory" => "application-http-authentication")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain",
+    "http-server-mechanism-factory" => "global",
+    "mechanism-configurations" => [
+        {
+            "mechanism-name" => "BASIC",
+            "mechanism-realm-configurations" => [{"realm-name" => "ApplicationRealm"}]
+        },
+        {"mechanism-name" => "FORM"}
+    ]
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "elytron"),
+        ("http-authentication-factory" => "application-http-authentication")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain",
+    "http-server-mechanism-factory" => "global",
+    "mechanism-configurations" => [
+        {
+            "mechanism-name" => "BASIC",
+            "mechanism-realm-configurations" => [{"realm-name" => "ApplicationRealm"}]
+        },
+        {"mechanism-name" => "FORM"}
+    ]
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "elytron"),
+        ("http-authentication-factory" => "application-http-authentication")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain",
+    "http-server-mechanism-factory" => "global",
+    "mechanism-configurations" => [
+        {
+            "mechanism-name" => "BASIC",
+            "mechanism-realm-configurations" => [{"realm-name" => "ApplicationRealm"}]
+        },
+        {"mechanism-name" => "FORM"}
+    ]
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "undertow"),
+        ("application-security-domain" => "other")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "undertow"),
+        ("application-security-domain" => "other")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "undertow"),
+        ("application-security-domain" => "other")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "undertow"),
+        ("application-security-domain" => "other")
+    ],
+    "operation" => "add",
+    "security-domain" => "ApplicationDomain"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "ejb3"),
+        ("service" => "remote")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "ejb3"),
+        ("service" => "remote")
+    ],
+    "operation" => "remove"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "ejb3"),
+        ("service" => "remote")
+    ],
+    "operation" => "add",
+    "connector-ref" => "http-remoting-connector",
+    "thread-pool-name" => "default"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "ejb3"),
+        ("service" => "remote")
+    ],
+    "operation" => "add",
+    "connector-ref" => "http-remoting-connector",
+    "thread-pool-name" => "default"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "ejb3")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-resource-adapter-name",
+    "value" => "${ejb.resource-adapter-name:activemq-ra.rar}"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "ejb3")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-mdb-instance-pool",
+    "value" => "mdb-strict-max-pool"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "ejb3")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-resource-adapter-name",
+    "value" => "${ejb.resource-adapter-name:activemq-ra.rar}"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "ejb3")
+    ],
+    "operation" => "write-attribute",
+    "name" => "default-mdb-instance-pool",
+    "value" => "mdb-strict-max-pool"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "undertow"),
+        ("server" => "default-server"),
+        ("host" => "default-host"),
+        ("setting" => "single-sign-on")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "undertow"),
+        ("server" => "default-server"),
+        ("host" => "default-host"),
+        ("setting" => "single-sign-on")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "undertow"),
+        ("server" => "default-server"),
+        ("host" => "default-host"),
+        ("setting" => "single-sign-on")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "undertow"),
+        ("server" => "default-server"),
+        ("host" => "default-host"),
+        ("setting" => "single-sign-on")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "iiop-openjdk")
+    ],
+    "operation" => "write-attribute",
+    "name" => "ssl-socket-binding",
+    "value" => "iiop-ssl"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "iiop-openjdk")
+    ],
+    "operation" => "write-attribute",
+    "name" => "socket-binding",
+    "value" => "iiop"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "iiop-openjdk")
+    ],
+    "operation" => "write-attribute",
+    "name" => "ssl-socket-binding",
+    "value" => "iiop-ssl"
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "iiop-openjdk")
+    ],
+    "operation" => "write-attribute",
+    "name" => "socket-binding",
+    "value" => "iiop"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#"),
+        ("role" => "guest")
+    ],
+    "operation" => "add",
+    "delete-non-durable-queue" => true,
+    "consume" => true,
+    "create-non-durable-queue" => true,
+    "send" => true
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#"),
+        ("role" => "admin")
+    ],
+    "operation" => "add",
+    "delete-non-durable-queue" => true,
+    "consume" => true,
+    "create-non-durable-queue" => true,
+    "send" => true
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("address-setting" => "#")
+    ],
+    "operation" => "add",
+    "expiry-address" => "jms.queue.ExpiryQueue",
+    "max-size-bytes" => 10485760,
+    "dead-letter-address" => "jms.queue.DLQ",
+    "message-counter-history-day-limit" => 10,
+    "page-size-bytes" => 2097152
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("http-connector" => "http-connector")
+    ],
+    "operation" => "add",
+    "endpoint" => "http-acceptor",
+    "socket-binding" => "http"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("http-connector" => "http-connector-throughput")
+    ],
+    "operation" => "add",
+    "endpoint" => "http-acceptor-throughput",
+    "socket-binding" => "http",
+    "params" => {"batch-delay" => "50"}
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("in-vm-connector" => "in-vm")
+    ],
+    "operation" => "add",
+    "server-id" => 0
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("http-acceptor" => "http-acceptor")
+    ],
+    "operation" => "add",
+    "http-listener" => "default"
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("http-acceptor" => "http-acceptor-throughput")
+    ],
+    "operation" => "add",
+    "http-listener" => "default",
+    "params" => [
+        ("batch-delay" => "50"),
+        ("direct-deliver" => "false")
+    ]
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("in-vm-acceptor" => "in-vm")
+    ],
+    "operation" => "add",
+    "server-id" => 0
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("jms-queue" => "ExpiryQueue")
+    ],
+    "operation" => "add",
+    "entries" => ["java:/jms/queue/ExpiryQueue"]
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("jms-queue" => "DLQ")
+    ],
+    "operation" => "add",
+    "entries" => ["java:/jms/queue/DLQ"]
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("connection-factory" => "InVmConnectionFactory")
+    ],
+    "operation" => "add",
+    "entries" => ["java:/ConnectionFactory"],
+    "connectors" => ["in-vm"]
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("connection-factory" => "RemoteConnectionFactory")
+    ],
+    "operation" => "add",
+    "entries" => ["java:jboss/exported/jms/RemoteConnectionFactory"],
+    "connectors" => ["http-connector"]
+}
+{
+    "address" => [
+        ("profile" => "default"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("pooled-connection-factory" => "activemq-ra")
+    ],
+    "operation" => "add",
+    "entries" => [
+        "java:/JmsXA",
+        "java:jboss/DefaultJMSConnectionFactory"
+    ],
+    "connectors" => ["in-vm"],
+    "transaction" => "xa"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#")
+    ],
+    "operation" => "add"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#"),
+        ("role" => "guest")
+    ],
+    "operation" => "add",
+    "delete-non-durable-queue" => true,
+    "consume" => true,
+    "create-non-durable-queue" => true,
+    "send" => true
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#"),
+        ("role" => "admin")
+    ],
+    "operation" => "add",
+    "delete-non-durable-queue" => true,
+    "consume" => true,
+    "create-non-durable-queue" => true,
+    "send" => true
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("address-setting" => "#")
+    ],
+    "operation" => "add",
+    "expiry-address" => "jms.queue.ExpiryQueue",
+    "max-size-bytes" => 10485760,
+    "dead-letter-address" => "jms.queue.DLQ",
+    "message-counter-history-day-limit" => 10,
+    "page-size-bytes" => 2097152
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("http-connector" => "http-connector")
+    ],
+    "operation" => "add",
+    "endpoint" => "http-acceptor",
+    "socket-binding" => "http"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("http-connector" => "http-connector-throughput")
+    ],
+    "operation" => "add",
+    "endpoint" => "http-acceptor-throughput",
+    "socket-binding" => "http",
+    "params" => {"batch-delay" => "50"}
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("in-vm-connector" => "in-vm")
+    ],
+    "operation" => "add",
+    "server-id" => 0
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("http-acceptor" => "http-acceptor")
+    ],
+    "operation" => "add",
+    "http-listener" => "default"
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("http-acceptor" => "http-acceptor-throughput")
+    ],
+    "operation" => "add",
+    "http-listener" => "default",
+    "params" => [
+        ("batch-delay" => "50"),
+        ("direct-deliver" => "false")
+    ]
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("in-vm-acceptor" => "in-vm")
+    ],
+    "operation" => "add",
+    "server-id" => 0
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("jms-queue" => "ExpiryQueue")
+    ],
+    "operation" => "add",
+    "entries" => ["java:/jms/queue/ExpiryQueue"]
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("jms-queue" => "DLQ")
+    ],
+    "operation" => "add",
+    "entries" => ["java:/jms/queue/DLQ"]
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("connection-factory" => "InVmConnectionFactory")
+    ],
+    "operation" => "add",
+    "entries" => ["java:/ConnectionFactory"],
+    "connectors" => ["in-vm"]
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("connection-factory" => "RemoteConnectionFactory")
+    ],
+    "operation" => "add",
+    "entries" => ["java:jboss/exported/jms/RemoteConnectionFactory"],
+    "connectors" => ["http-connector"]
+}
+{
+    "address" => [
+        ("profile" => "ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("pooled-connection-factory" => "activemq-ra")
+    ],
+    "operation" => "add",
+    "entries" => [
+        "java:/JmsXA",
+        "java:jboss/DefaultJMSConnectionFactory"
+    ],
+    "connectors" => ["in-vm"],
+    "transaction" => "xa"
+}
+{
+    "address" => [
+        ("profile" => "full"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#"),
+        ("role" => "admin")
+    ],
+    "operation" => "add",
+    "delete-non-durable-queue" => true,
+    "consume" => true,
+    "create-non-durable-queue" => true,
+    "send" => true
+}
+{
+    "address" => [
+        ("profile" => "full-ha"),
+        ("subsystem" => "messaging-activemq"),
+        ("server" => "default"),
+        ("security-setting" => "#"),
+        ("role" => "admin")
+    ],
+    "operation" => "add",
+    "delete-non-durable-queue" => true,
+    "consume" => true,
+    "create-non-durable-queue" => true,
+    "send" => true
+}
+Script /opt/jboss-eap-7.4/cli-scripts/domain-configuration.cli ran successfully.
+/subsystem=datasources/jdbc-driver=oracle:add(driver-name="oracle",driver-module-name="oracle.jdbc",driver-xa-datasource-class-name="oracle.jdbc.xa.client.OracleXADataSource")
+Successfully installed JDBC driver.
+/subsystem=datasources/data-source=KieServerDS:add(jndi-name="java:/OracleDS",driver-name=oracle,min-pool-size=5,max-pool-size=20,user-name=PAM,password="${VAULT::datasource.KieServerDS::password::1}",exception-sorter-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter,valid-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker,stale-connection-checker-class-name=org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker,connection-url="jdbc:oracle:thin:@//192.168.1.190:1521/pam"
+Successfully created datasource.
+/system-property=org.kie.server.persistence.ds:read-attribute(name=value)
+/system-property=org.kie.server.persistence.ds:add(value=java:/OracleDS)
+/system-property=org.kie.server.persistence.dialect:read-attribute(name=value)
+/system-property=org.kie.server.persistence.dialect:add(value=org.hibernate.dialect.Oracle10gDialect)
+Configuration completed successfully. See the log for a list of commands that were run on your system. 
+Shut down embedded server.
+Successfully wrote properties to: /opt/jboss-eap-7.4/standalone/configuration/logging.properties
+Replacing text: vaultedrhpampasswordholder with text: ${VAULT::vaulted::controller.password::1} in file:
+/opt/jboss-eap-7.4/standalone/configuration/standalone-ha.xml
+/opt/jboss-eap-7.4/standalone/configuration/standalone.xml
+/opt/jboss-eap-7.4/standalone/configuration/standalone-full.xml
+/opt/jboss-eap-7.4/standalone/configuration/standalone-full-ha.xml
+/opt/jboss-eap-7.4/domain/configuration/host.xml
+/opt/jboss-eap-7.4/domain/configuration/domain.xml
+Wrote file with replaced text: /opt/jboss-eap-7.4/standalone/configuration/standalone-ha.xml. Lines changed: 2
+Wrote file with replaced text: /opt/jboss-eap-7.4/standalone/configuration/standalone.xml. Lines changed: 2
+Wrote file with replaced text: /opt/jboss-eap-7.4/standalone/configuration/standalone-full.xml. Lines changed: 2
+Wrote file with replaced text: /opt/jboss-eap-7.4/standalone/configuration/standalone-full-ha.xml. Lines changed: 2
+Wrote file with replaced text: /opt/jboss-eap-7.4/domain/configuration/host.xml. Lines changed: 0
+Wrote file with replaced text: /opt/jboss-eap-7.4/domain/configuration/domain.xml. Lines changed: 2
+Filesystem realm installation successful.
+Filesystem realm installation successful.
+Filesystem realm installation successful.
+Filesystem realm installation successful.
+Empty file /opt/jboss-eap-7.4/standalone/deployments/kie-server.war.dodeploy created successfully.
+Successfully moved source: /opt/jboss-eap-7.4/standalone/log/server.log to destination: /opt/jboss-eap-7.4/installation/server-logs
+Successfully moved source: /opt/jboss-eap-7.4/domain/log/host-controller.log to destination: /opt/jboss-eap-7.4/installation/server-logs
