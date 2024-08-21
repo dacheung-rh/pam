@@ -1,0 +1,123 @@
+$ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=<USERNAME>),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=<USERNAME>, clear={password='<PASSWORD>'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=<USERNAME>, name=role, value=['kie-server'])"
+
+
+
+/opt/jboss-eap-7.4/bin/jboss-cli.sh --file=/opt/jboss-eap-7.4/docs/examples/enable-elytron.cli
+
+./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=bamoeadmin),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=bamoeadmin, clear={password='Redh@t123'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=bamoeadmin, name=role, value=[admin,rest-all,kie-server])"
+
+
+
+
+    <system-properties>
+        <property name="org.kie.server.id" value="default-kie-server"/>
+        <property name="org.kie.server.controller" value="http://localhost:8080/business-central/rest/controller"/>
+        <property name="org.kie.server.controller.user" value="controllerUser"/>
+        <property name="org.kie.server.controller.pwd" value="controllerUser1234"/>
+        <property name="org.kie.server.location" value="http://localhost:8080/kie-server/services/rest/server"/>
+        <property name="org.kie.server.user" value="controllerUser"/>
+        <property name="org.kie.server.pwd" value="controllerUser1234"/>
+    </system-properties>
+
+
+    <system-properties>
+        <property name="org.kie.example" value="true"/>
+        <property name="org.jbpm.designer.perspective" value="full"/>
+        <property name="designerdataobjects" value="false"/>
+        <property name="org.kie.server.user" value="controllerUser"/>
+        <property name="org.kie.server.pwd" value="${VAULT::vaulted::controller.password::1}"/>
+        <property name="org.kie.server.location" value="http://localhost:8080/kie-server/services/rest/server"/>
+        <property name="org.kie.server.id" value="default-kieserver"/>
+        <property name="org.kie.server.router" value="http://localhost:9000"/>
+        <property name="org.drools.server.ext.disabled" value="false"/>
+        <property name="org.jbpm.server.ext.disabled" value="false"/>
+        <property name="org.jbpm.ui.server.ext.disabled" value="false"/>
+        <property name="org.jbpm.case.server.ext.disabled" value="false"/>
+        <property name="org.kie.dmn.server.ext.disabled" value="false"/>
+        <property name="org.kie.swagger.server.ext.disabled" value="false"/>
+        <property name="org.kie.prometheus.server.ext.disabled" value="false"/>
+        <property name="org.kie.server.controller" value="http://localhost:8080/business-central/rest/controller"/>
+        <property name="org.kie.server.controller.user" value="controllerUser"/>
+        <property name="org.kie.server.controller.pwd" value="${VAULT::vaulted::controller.password::1}"/>
+        <property name="org.kie.server.persistence.ds" value="java:/OracleDS"/>
+        <property name="org.kie.server.persistence.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+    </system-properties>
+
+
+curl -X GET "http://localhost:8080/kie-server/services/rest/server" -H  "accept: application/xml" -u 'controllerUser:controllerUser1234'
+
+curl -X GET "http://localhost:8080/business-central/rest/controller/management/servers" -H  "accept: application/xml" -u 'controllerUser:controllerUser1234'
+
+curl -v -X POST -H 'Content-type: application/xml' -H 'X-KIE-Content-Type: xstream' -d @create-container.xml -u ${KIE_CRED} http://${KIE-SERVER-HOST}:${KIE-SERVER-PORT}/kie-server/services/rest/server/config/
+
+curl http://localhost:9000/mgmt/list
+
+curl -s -X POST -H 'Content-type: application/json' -H 'X-KIE-Content-Type: json' -d '{"timerDuration":"9s"}' -u kieserver:kieserver1! http://localhost:9000/containers/example:timer-test:1.1/processes/timer-test.TimerProcess/instances
+
+
+java  -Dorg.kie.server.router.tls.keystore = <KEYSTORE_PATH>
+        -Dorg.kie.server.router.tls.keystore.password = <KEYSTORE_PASSWORD>
+        -Dorg.kie.server.router.tls.keystore.keyalias = <KEYSTORE_ALIAS>
+        -Dorg.kie.server.router.tls.port = <HTTPS_PORT>
+        -Dorg.kie.server.router.port=0
+        -jar bamoe-8.0.5-smart-router.jar
+
+
+java -Dorg.kie.server.router.config.file=<CONFIG_FILE> -jar rhpam-7.13.5-smart-router.jar
+
+
+curl http://localhost:9000/mgmt/list
+
+
+curl -s -X POST -H 'Content-type: application/json' -H 'X-KIE-Content-Type: json' -d '{"timerDuration":"9s"}' -u kieserver:kieserver1! http://localhost:9000/containers/example:timer-test:1.1/processes/timer-test.TimerProcess/instances
+
+
+keytool -genkey -alias kierouter.cheers.local -keyalg RSA -keystore KeyStore.jks -keysize 2048
+
+keytool -certreq -alias kierouter.cheers.local -keystore KeyStore.jks -file kierouter.cheers.local.csr
+
+keytool -import -trustcacerts -alias root -file root.crt -keystore KeyStore.jks
+
+keytool -import -trustcacerts -alias intermediate -file intermediate.crt -keystore KeyStore.jks
+
+keytool -import -trustcacerts -alias kierouter.cheers.local -file kierouter.cheers.local.crt -keystore KeyStore.jks
+
+
+java -Dorg.kie.server.router.name=kierouter1 \
+     -Dorg.kie.server.router.host=192.168.1.91 \
+     -Dorg.kie.server.router.port=0 \
+     -Dorg.kie.server.router.tls.keystore=KeyStore.jks \
+     -Dorg.kie.server.router.tls.keystore.password=changeme \
+     -Dorg.kie.server.router.tls.keystore.keyalias=kierouter.cheers.local \
+     -Dorg.kie.server.router.url.external=kierouter.cheers.local\
+     -Dorg.kie.server.router.tls.port=9443 \
+     -Dorg.kie.server.controller=http://localhost:8080/business-central/rest/controller \
+     -Dorg.kie.server.controller.user=controlleruser \
+     -Dorg.kie.server.controller.pwd="controllerUser1234" \
+     -jar bamoe-8.0.5-smart-router.jar
+
+
+java -Dorg.kie.server.router.name=kierouter1 \
+     -Dorg.kie.server.router.host=192.168.1.91 \
+     -Dorg.kie.server.router.port=9000 \
+     -Dorg.kie.server.router.tls.keystore=KeyStore.jks \
+     -Dorg.kie.server.router.tls.keystore.password=changeme \
+     -Dorg.kie.server.router.tls.keystore.keyalias=kierouter.cheers.local \
+     -Dorg.kie.server.router.url.external=kierouter.cheers.local\
+     -Dorg.kie.server.router.tls.port=9443 \
+     -jar bamoe-8.0.5-smart-router.jar
+
+
+[admin@localhost ~]$ curl http://192.168.1.91:9000/mgmt/list
+{
+  "servers": [{"default-kieserver": ["http://localhost:8080/kie-server/services/rest/server"]}],
+  "containerInfo": [{
+    "releaseId": "mortgage-process:mortgage-process:1.0.0-SNAPSHOT",
+    "alias": "mortgage-process",
+    "containerId": "mortgage-process_1.0.0-SNAPSHOT"
+  }],
+  "containers": [
+    {"mortgage-process_1.0.0-SNAPSHOT": ["http://localhost:8080/kie-server/services/rest/server"]},
+    {"mortgage-process": ["http://localhost:8080/kie-server/services/rest/server"]}
+  ]
+}[
