@@ -73,16 +73,41 @@ curl http://192.168.1.92:9000/mgmt/list
 
 curl -s -X POST -H 'Content-type: application/json' -H 'X-KIE-Content-Type: json' -d '{"timerDuration":"9s"}' -u kieserver:kieserver1! http://localhost:9000/containers/example:timer-test:1.1/processes/timer-test.TimerProcess/instances
 
+######## create keystore and sign with root cert
+## Part 0 
+## create CA (optional) if CA not exist and we wish to create your own
 
+sudo -i
+mkdir -p ~/certs
+cd ~/certs
+openssl genrsa -out pamca.key 2048
+openssl req -new -x509 -key pamca.key -out pamca.crt -days 3650 -subj "/C=HK/ST=HongKong/L=HongKong/O=Global Security/OU=IT Department/CN=ITD"
+
+
+## trust the CA
+cp ./pamca.crt /etc/pki/ca-trust/source/anchors/pamca.crt
+
+update-ca-trust extract
+
+
+## Part 1
+## generate key and csr
 keytool -genkey -alias kierouter.cheers.local -keyalg RSA -keystore KeyStore.jks -keysize 2048
 
 keytool -certreq -alias kierouter.cheers.local -keystore KeyStore.jks -file kierouter.cheers.local.csr
 
-keytool -import -trustcacerts -alias root -file root.crt -keystore KeyStore.jks
 
-keytool -import -trustcacerts -alias intermediate -file intermediate.crt -keystore KeyStore.jks
+# sign with CA
+openssl x509 -req -days 3650 -in kierouter.cheers.local.csr -CA pamca.crt -CAkey pamca.key -CAcreateserial -out kierouter.cheers.local.crt
+
+keytool -import -trustcacerts -alias pamca -file pamca.crt -keystore KeyStore.jks
+
+#keytool -import -trustcacerts -alias intermediate -file intermediate.crt -keystore KeyStore.jks
 
 keytool -import -trustcacerts -alias kierouter.cheers.local -file kierouter.cheers.local.crt -keystore KeyStore.jks
+
+
+##################################################################################################
 
 
 java -Dorg.kie.server.router.name=kierouter1 \
@@ -99,7 +124,7 @@ java -Dorg.kie.server.router.name=kierouter1 \
      -jar bamoe-8.0.5-smart-router.jar
 
 
-java -Dorg.kie.server.router.name=kierouter1 \
+java -Dorg.kie.server.router.name=kierouter2 \
      -Dorg.kie.server.router.host=192.168.1.91 \
      -Dorg.kie.server.router.port=9000 \
      -Dorg.kie.server.router.tls.keystore=KeyStore.jks \
