@@ -1,13 +1,8 @@
-$ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=<USERNAME>),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=<USERNAME>, clear={password='<PASSWORD>'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=<USERNAME>, name=role, value=['kie-server'])"
-
-
+./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=<USERNAME>),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=<USERNAME>, clear={password='<PASSWORD>'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=<USERNAME>, name=role, value=['kie-server'])"
 
 /opt/jboss-eap-7.4/bin/jboss-cli.sh --file=/opt/jboss-eap-7.4/docs/examples/enable-elytron.cli
 
 ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=bamoeadmin),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=bamoeadmin, clear={password='Redh@t123'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=bamoeadmin, name=role, value=[admin,rest-all,kie-server])"
-
-
-
 
     <system-properties>
         <property name="org.kie.server.id" value="default-kie-server"/>
@@ -19,8 +14,11 @@ $ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/
         <property name="org.kie.server.pwd" value="controllerUser1234"/>
     </system-properties>
 
-
     <system-properties>
+        <property name="org.kie.server.router" value="http://localhost:9000"/>
+        <property name="javax.net.ssl.trustStore" value="/opt/smartrouter/truststore.jks"/>
+        <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
+        <property name="kie.maven.settings.custom" value="/opt/custom-config/settings.xml"/>
         <property name="org.kie.example" value="true"/>
         <property name="org.jbpm.designer.perspective" value="full"/>
         <property name="designerdataobjects" value="false"/>
@@ -28,7 +26,6 @@ $ ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/
         <property name="org.kie.server.pwd" value="${VAULT::vaulted::controller.password::1}"/>
         <property name="org.kie.server.location" value="http://localhost:8080/kie-server/services/rest/server"/>
         <property name="org.kie.server.id" value="default-kieserver"/>
-        <property name="org.kie.server.router" value="http://localhost:9000"/>
         <property name="org.drools.server.ext.disabled" value="false"/>
         <property name="org.jbpm.server.ext.disabled" value="false"/>
         <property name="org.jbpm.ui.server.ext.disabled" value="false"/>
@@ -101,7 +98,14 @@ keytool -import -trustcacerts -alias pamca -file pamca.crt -keystore KeyStore.jk
 
 keytool -import -trustcacerts -alias kierouter.cheers.local -file kierouter.cheers.local.crt -keystore KeyStore.jks
 
+!!!!! trust router cert to EAP
 
+[admin@localhost ~]$ mkdir -p /opt/smartrouter
+[admin@localhost ~]$ cp /home/admin/certs/KeyStore.jks /opt/smartrouter/truststore.jks
+    <system-properties>
+        <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
+        <property name="javax.net.ssl.trustStore" value="/opt/smartrouter/truststore.jks"/>
+        <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
 ##################################################################################################
 
 ## proved okay on kieserver as localhost
@@ -132,28 +136,6 @@ java -Dorg.kie.server.router.name=kierouter1 \
      -Dorg.kie.server.controller.user=controllerUser \
      -Dorg.kie.server.controller.pwd="controllerUser1234" \
      -Dorg.kie.server.router.config.watcher.enabled=true \
-     -jar bamoe-8.0.5-smart-router.jar
-
-java -Dorg.kie.server.router.name=kierouter1 \
-     -Dorg.kie.server.router.host=192.168.1.91 \
-     -Dorg.kie.server.router.port=9000 \
-     -Dorg.kie.server.router.tls.keystore=KeyStore.jks \
-     -Dorg.kie.server.router.tls.keystore.password=changeme \
-     -Dorg.kie.server.router.tls.keystore.keyalias=kierouter.cheers.local \
-     -Dorg.kie.server.router.url.external=kierouter.cheers.local\
-     -Dorg.kie.server.router.tls.port=9443 \
-     -Dorg.kie.server.controller=http://localhost:8080/business-central/rest/controller \
-     -Dorg.kie.server.controller.user=controllerUser \
-     -Dorg.kie.server.controller.pwd="controllerUser1234" \
-     -jar bamoe-8.0.5-smart-router.jar
-
-
-java -Dorg.kie.server.router.name=kierouter1 \
-     -Dorg.kie.server.router.host=192.168.1.91 \
-     -Dorg.kie.server.router.port=9000 \
-     -Dorg.kie.server.controller=http://localhost:8080/business-central/rest/controller \
-     -Dorg.kie.server.controller.user=controllerUser \
-     -Dorg.kie.server.controller.pwd="controllerUser1234" \
      -jar bamoe-8.0.5-smart-router.jar
 
 
