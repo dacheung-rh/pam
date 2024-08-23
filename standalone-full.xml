@@ -41,6 +41,7 @@
     </extensions>
     <system-properties>
         <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
+        <!--property name="org.kie.server.router" value="https://192.168.1.91:9443"/-->
 	<property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
 	<property name="javax.net.ssl.trustStorePassword" value="changeme"/>
         <property name="org.kie.example" value="true"/>
@@ -85,7 +86,7 @@
             <security-realm name="ApplicationRealm">
                 <server-identities>
                     <ssl>
-                        <keystore path="application.keystore" relative-to="jboss.server.config.dir" keystore-password="password" alias="server" key-password="password" generate-self-signed-certificate-host="localhost"/>
+                        <keystore path="pamapplication.jks" relative-to="jboss.server.config.dir" keystore-password="password" alias="server" key-password="password" generate-self-signed-certificate-host="pam.cheers.local"/>
                     </ssl>
                 </server-identities>
             </security-realm>
