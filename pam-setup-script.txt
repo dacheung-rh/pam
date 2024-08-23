@@ -105,7 +105,7 @@ keytool -v -list -keystore /opt/jboss-eap-7.4/standalone/configuration/pamapplic
             <security-realm name="ApplicationRealm">
                 <server-identities>
                     <ssl>
-                        <keystore path="pamapplication.jks" relative-to="jboss.server.config.dir" keystore-password="password" alias="server" key-password="password" generate-self-signed-certificate-host="pam.cheers.local"/>
+                        <keystore path="pamapplication.jks" relative-to="jboss.server.config.dir" keystore-password="password" alias="pam.cheers.local" key-password="password" generate-self-signed-certificate-host="pam.cheers.local"/>
                     </ssl>
                 </server-identities>
             </security-realm>
