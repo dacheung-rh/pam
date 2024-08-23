@@ -16,7 +16,7 @@
 
     <system-properties>
         <property name="org.kie.server.router" value="http://localhost:9000"/>
-        <property name="javax.net.ssl.trustStore" value="/opt/smartrouter/truststore.jks"/>
+        <property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
         <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
         <property name="kie.maven.settings.custom" value="/opt/custom-config/settings.xml"/>
         <property name="org.kie.example" value="true"/>
@@ -99,12 +99,13 @@ keytool -import -trustcacerts -alias pamca -file pamca.crt -keystore KeyStore.jk
 keytool -import -trustcacerts -alias kierouter.cheers.local -file kierouter.cheers.local.crt -keystore KeyStore.jks
 
 !!!!! trust router cert to EAP
+/opt/jboss-eap-7.4/KeyStore.jk
 
-[admin@localhost ~]$ mkdir -p /opt/smartrouter
-[admin@localhost ~]$ cp /home/admin/certs/KeyStore.jks /opt/smartrouter/truststore.jks
+keytool -v -list -keystore /opt/jboss-eap-7.4/KeyStore.jks
+
     <system-properties>
         <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
-        <property name="javax.net.ssl.trustStore" value="/opt/smartrouter/truststore.jks"/>
+        <property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
         <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
 ##################################################################################################
 
