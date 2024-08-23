@@ -82,7 +82,36 @@ cp ./pamca.crt /etc/pki/ca-trust/source/anchors/pamca.crt
 update-ca-trust extract
 
 
-## Part 1
+## Part 1 - application domain #############################################
+## generate key and csr
+keytool -genkey -keyalg RSA -alias pam.cheers.local -keystore pamapplication.jks -storepass password -validity 3600 -keysize 2048
+
+keytool -certreq -alias pam.cheers.local -keystore pamapplication.jks -file pam.cheers.local.csr -storepass password
+
+# sign with CA
+openssl x509 -req -days 3650 -in pam.cheers.local.csr -CA pamca.crt -CAkey pamca.key -CAcreateserial -out pam.cheers.local.crt
+
+keytool -import -trustcacerts -alias pamca -file pamca.crt -keystore pamapplication.jks
+
+#keytool -import -trustcacerts -alias intermediate -file intermediate.crt -keystore pamapplication.jks
+
+keytool -import -trustcacerts -alias pam.cheers.local -file pam.cheers.local.crt -keystore pamapplication.jks
+
+!!!!! trust router cert to EAP
+/opt/jboss-eap-7.4/standalone/configuration/pamapplication.jks
+
+keytool -v -list -keystore /opt/jboss-eap-7.4/standalone/configuration/pamapplication.jks
+
+            <security-realm name="ApplicationRealm">
+                <server-identities>
+                    <ssl>
+                        <keystore path="pamapplication.jks" relative-to="jboss.server.config.dir" keystore-password="password" alias="server" key-password="password" generate-self-signed-certificate-host="pam.cheers.local"/>
+                    </ssl>
+                </server-identities>
+            </security-realm>
+        </security-realms>
+
+## Part 2 - smart router #############################################
 ## generate key and csr
 keytool -genkey -alias kierouter.cheers.local -keyalg RSA -keystore KeyStore.jks -keysize 2048
 
@@ -107,6 +136,11 @@ keytool -v -list -keystore /opt/jboss-eap-7.4/KeyStore.jks
         <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
         <property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
         <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
+
+
+# changeit
+keytool -list -v -keystore $JAVA_HOME/jre/lib/security/cacerts
+
 ##################################################################################################
 
 ## proved okay on kieserver as localhost
@@ -213,7 +247,7 @@ WantedBy=multi-user.target
 EOF
 
 
-sudo systemctl daemon-reload
-sudo systemctl start smartrouter.service
-sudo systemctl status smartrouter.service
+systemctl daemon-reload
+systemctl start smartrouter.service
+systemctl status smartrouter.service
 
