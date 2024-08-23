@@ -40,6 +40,9 @@
         <extension module="org.wildfly.iiop-openjdk"/>
     </extensions>
     <system-properties>
+        <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
+	<property name="javax.net.ssl.trustStore" value="/opt/smartrouter/truststore.jks"/>
+	<property name="javax.net.ssl.trustStorePassword" value="changeme"/>
         <property name="org.kie.example" value="true"/>
         <property name="org.jbpm.designer.perspective" value="full"/>
         <property name="designerdataobjects" value="false"/>
@@ -47,7 +50,6 @@
         <property name="org.kie.server.pwd" value="${VAULT::vaulted::controller.password::1}"/>
         <property name="org.kie.server.location" value="http://localhost:8080/kie-server/services/rest/server"/>
 	<property name="org.kie.server.id" value="default-kieserver"/>
-        <property name="org.kie.server.router" value="http://192.168.1.92:9000,http://192.168.1.91:9000"/>	
         <property name="org.drools.server.ext.disabled" value="false"/>
         <property name="org.jbpm.server.ext.disabled" value="false"/>
         <property name="org.jbpm.ui.server.ext.disabled" value="false"/>
@@ -130,7 +132,7 @@
                     <named-formatter name="PATTERN"/>
                 </formatter>
                 <file relative-to="jboss.server.log.dir" path="server.log"/>
-                <suffix value=".yyyy-MM-dd"/>
+		<suffix value=".yyyy-MM-dd"/>
                 <append value="true"/>
             </periodic-rotating-file-handler>
             <logger category="com.arjuna">
