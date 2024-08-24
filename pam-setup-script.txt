@@ -15,8 +15,6 @@
     </system-properties>
 
     <system-properties>
-        <property name="kie.maven.settings.custom" value="/opt/custom-config/settings.xml"/>
-        <property name="kie.maven.offline.force" value="true"/>
         <property name="hibernate.hbm2ddl.auto" value="none"/>
         <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
         <property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
@@ -103,12 +101,19 @@ keytool -import -trustcacerts -alias pam.cheers.local -file pam.cheers.local.crt
 !!!!! trust router cert to EAP
 /opt/jboss-eap-7.4/standalone/configuration/pamapplication.jks
 
-keytool -v -list -keystore /opt/jboss-eap-7.4/standalone/configuration/pamapplication.jks
+## backup default application keystore
+cp /opt/jboss-eap-7.4/standalone/configuration/application.keystore /opt/jboss-eap-7.4/standalone/configuration/application.keystore_orig
+
+## merge new application keystore to original application keystore
+cd /opt/jboss-eap-7.4/standalone/configuration/
+keytool -importkeystore -srckeystore pamapplication.jks -destkeystore application.keystore  -srcstorepass password -deststorepass password
+
+keytool -v -list -keystore /opt/jboss-eap-7.4/standalone/configuration/application.keystore -alias pam.cheers.local
 
             <security-realm name="ApplicationRealm">
                 <server-identities>
                     <ssl>
-                        <keystore path="pamapplication.jks" relative-to="jboss.server.config.dir" keystore-password="password" alias="pam.cheers.local" key-password="password" generate-self-signed-certificate-host="pam.cheers.local"/>
+                        <keystore path="application.keystore" relative-to="jboss.server.config.dir" keystore-password="password" alias="pam.cheers.local" key-password="password" generate-self-signed-certificate-host="pam.cheers.local"/>
                     </ssl>
                 </server-identities>
             </security-realm>
@@ -146,23 +151,7 @@ keytool -list -v -keystore $JAVA_HOME/jre/lib/security/cacerts
 
 ##################################################################################################
 
-## proved okay on kieserver as localhost
-java -Dorg.kie.server.router.name=kierouter1 \
-     -Dorg.kie.server.router.host=192.168.1.91 \
-     -Dorg.kie.server.router.port=9000 \
-     -Dorg.kie.server.controller.user=controllerUser \
-     -Dorg.kie.server.controller.pwd="controllerUser1234" \
-     -jar bamoe-8.0.5-smart-router.jar
-
-## proved okay on kieserver as localhost
-java -Dorg.kie.server.router.name=kierouter1 \
-     -Dorg.kie.server.router.host=192.168.1.91 \
-     -Dorg.kie.server.router.port=9000 \
-     -Dorg.kie.server.controller=http://localhost:8080/business-central/rest/controller \
-     -Dorg.kie.server.controller.user=controllerUser \
-     -Dorg.kie.server.controller.pwd="controllerUser1234" \
-     -jar bamoe-8.0.5-smart-router.jar
-
+## smart router register controller
 java -Dorg.kie.server.router.name=kierouter1 \
      -Dorg.kie.server.router.host=192.168.1.92 \
      -Dorg.kie.server.router.port=9000 \
@@ -176,8 +165,7 @@ java -Dorg.kie.server.router.name=kierouter1 \
      -Dorg.kie.server.router.config.watcher.enabled=true \
      -jar bamoe-8.0.5-smart-router.jar
 
-
-## proved okay
+## register smart router from controller
 java -Dorg.kie.server.router.name=kierouter2 \
      -Dorg.kie.server.router.host=192.168.1.91 \
      -Dorg.kie.server.router.port=9000 \
