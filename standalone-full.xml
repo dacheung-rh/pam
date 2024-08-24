@@ -40,19 +40,18 @@
         <extension module="org.wildfly.iiop-openjdk"/>
     </extensions>
     <system-properties>
-    	<property name="kie.maven.offline.force" value="true"/>
-    	<property name="hibernate.hbm2ddl.auto" value="none"/>
+        <property name="kie.maven.offline.force" value="true"/>
+        <property name="hibernate.hbm2ddl.auto" value="none"/>
         <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
-        <!--property name="org.kie.server.router" value="https://192.168.1.91:9443"/-->
-    	<property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
-    	<property name="javax.net.ssl.trustStorePassword" value="changeme"/>
+        <property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
+        <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
         <property name="org.kie.example" value="true"/>
         <property name="org.jbpm.designer.perspective" value="full"/>
         <property name="designerdataobjects" value="false"/>
         <property name="org.kie.server.user" value="controllerUser"/>
         <property name="org.kie.server.pwd" value="${VAULT::vaulted::controller.password::1}"/>
         <property name="org.kie.server.location" value="https://pam.cheers.local:8443/kie-server/services/rest/server"/>
-    	<property name="org.kie.server.id" value="default-kieserver"/>
+        <property name="org.kie.server.id" value="default-kieserver"/>
         <property name="org.drools.server.ext.disabled" value="false"/>
         <property name="org.jbpm.server.ext.disabled" value="false"/>
         <property name="org.jbpm.ui.server.ext.disabled" value="false"/>
@@ -130,14 +129,14 @@
                     <named-formatter name="COLOR-PATTERN"/>
                 </formatter>
             </console-handler>
-            <periodic-rotating-file-handler name="FILE" autoflush="true">
-                <formatter>
-                    <named-formatter name="PATTERN"/>
-                </formatter>
+            <periodic-size-rotating-file-handler name="PERIODIC_SIZE" autoflush="true" rotate-on-boot="true">
+                <encoding value="utf-8"/>
                 <file relative-to="jboss.server.log.dir" path="server.log"/>
-		<suffix value=".yyyy-MM-dd"/>
+                <rotate-size value="5000000"/>
+                <max-backup-index value="10"/>
+                <suffix value=".yyyy-MM-dd"/>
                 <append value="true"/>
-            </periodic-rotating-file-handler>
+            </periodic-size-rotating-file-handler>
             <logger category="com.arjuna">
                 <level name="WARN"/>
             </logger>
@@ -154,7 +153,7 @@
                 <level name="INFO"/>
                 <handlers>
                     <handler name="CONSOLE"/>
-                    <handler name="FILE"/>
+                    <handler name="PERIODIC_SIZE"/>
                 </handlers>
             </root-logger>
             <formatter name="PATTERN">
