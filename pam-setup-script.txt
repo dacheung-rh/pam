@@ -15,18 +15,19 @@
     </system-properties>
 
     <system-properties>
-        <property name="hibernate.hbm2ddl.auto" value="none"/>
-        <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
-        <property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
-        <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
         <property name="kie.maven.settings.custom" value="/opt/custom-config/settings.xml"/>
+    	<property name="kie.maven.offline.force" value="true"/>
+	    <property name="hibernate.hbm2ddl.auto" value="none"/>
+        <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
+	    <property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
+	    <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
         <property name="org.kie.example" value="true"/>
         <property name="org.jbpm.designer.perspective" value="full"/>
         <property name="designerdataobjects" value="false"/>
         <property name="org.kie.server.user" value="controllerUser"/>
         <property name="org.kie.server.pwd" value="${VAULT::vaulted::controller.password::1}"/>
-        <property name="org.kie.server.location" value="http://localhost:8080/kie-server/services/rest/server"/>
-        <property name="org.kie.server.id" value="default-kieserver"/>
+        <property name="org.kie.server.location" value="https://pam.cheers.local:8443/kie-server/services/rest/server"/>
+	    <property name="org.kie.server.id" value="default-kieserver"/>
         <property name="org.drools.server.ext.disabled" value="false"/>
         <property name="org.jbpm.server.ext.disabled" value="false"/>
         <property name="org.jbpm.ui.server.ext.disabled" value="false"/>
@@ -34,20 +35,16 @@
         <property name="org.kie.dmn.server.ext.disabled" value="false"/>
         <property name="org.kie.swagger.server.ext.disabled" value="false"/>
         <property name="org.kie.prometheus.server.ext.disabled" value="false"/>
-        <property name="org.kie.server.controller" value="http://localhost:8080/business-central/rest/controller"/>
+        <property name="org.kie.server.controller" value="https://pam.cheers.local:8443/business-central/rest/controller"/>
         <property name="org.kie.server.controller.user" value="controllerUser"/>
         <property name="org.kie.server.controller.pwd" value="${VAULT::vaulted::controller.password::1}"/>
         <property name="org.kie.server.persistence.ds" value="java:/OracleDS"/>
         <property name="org.kie.server.persistence.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
     </system-properties>
 
-
 curl -X GET "http://localhost:8080/kie-server/services/rest/server" -H  "accept: application/xml" -u 'controllerUser:controllerUser1234'
 
 curl -X GET "http://localhost:8080/business-central/rest/controller/management/servers" -H  "accept: application/xml" -u 'controllerUser:controllerUser1234'
-
-
-
 
 
 curl -v -X POST -H 'Content-type: application/xml' -H 'X-KIE-Content-Type: xstream' -d @create-container.xml -u ${KIE_CRED} http://${KIE-SERVER-HOST}:${KIE-SERVER-PORT}/kie-server/services/rest/server/config/
