@@ -15,7 +15,8 @@
     </system-properties>
 
     <system-properties>
-        <property name="org.kie.server.router" value="http://localhost:9000"/>
+        <property name="hibernate.hbm2ddl.auto" value="none"/>
+        <property name="org.kie.server.router" value="https://kierouter.cheers.local:9443"/>
         <property name="javax.net.ssl.trustStore" value="KeyStore.jks"/>
         <property name="javax.net.ssl.trustStorePassword" value="changeme"/>
         <property name="kie.maven.settings.custom" value="/opt/custom-config/settings.xml"/>
@@ -251,3 +252,7 @@ systemctl daemon-reload
 systemctl start smartrouter.service
 systemctl status smartrouter.service
 
+#############################################################################
+
+custom maven settings
+force offline maven
