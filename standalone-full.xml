@@ -89,7 +89,7 @@
             <security-realm name="ApplicationRealm">
                 <server-identities>
                     <ssl>
-                        <keystore path="pamapplication.jks" relative-to="jboss.server.config.dir" keystore-password="password" alias="pam.cheers.local" key-password="password" generate-self-signed-certificate-host="pam.cheers.local"/>
+                        <keystore path="application.keystore" relative-to="jboss.server.config.dir" keystore-password="password" alias="pam.cheers.local" key-password="password" generate-self-signed-certificate-host="pam.cheers.local"/>
                     </ssl>
                 </server-identities>
             </security-realm>
