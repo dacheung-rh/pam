@@ -1,3 +1,11 @@
+vi /opt/jboss-eap-7.4/bin/standalone.conf
+#
+# Specify options to pass to the Java VM.
+#
+if [ "x$JAVA_OPTS" = "x" ]; then
+   JAVA_OPTS="-Xms2G -Xmx2G -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=1024m -Djava.net.preferIPv4Stack=true"
+
+
 ./bin/jboss-cli.sh --commands="embed-server --std-out=echo,/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity(identity=<USERNAME>),/subsystem=elytron/filesystem-realm=ApplicationRealm:set-password(identity=<USERNAME>, clear={password='<PASSWORD>'}),/subsystem=elytron/filesystem-realm=ApplicationRealm:add-identity-attribute(identity=<USERNAME>, name=role, value=['kie-server'])"
 
 /opt/jboss-eap-7.4/bin/jboss-cli.sh --file=/opt/jboss-eap-7.4/docs/examples/enable-elytron.cli
