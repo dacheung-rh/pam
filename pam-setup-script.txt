@@ -246,3 +246,45 @@ force offline maven
     <system-properties>
         <property name="kie.maven.settings.custom" value="/opt/custom-config/settings.xml"/>
         <property name="kie.maven.offline.force" value="true"/>
+
+
+#############################################################################
+# logger default - periodic-rotating-file-handler
+
+# remove periodic-rotating-file-handler and add periodic-size-rotating-file-handle
+
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:add(file={path=FILE_PATH,relative-to=RELATIVE_TO_PATH},suffix=SUFFIX)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:write-attribute(name=level,value=LEVEL)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:write-attribute(name=rotate-on-boot, value=ROTATE_ON_BOOT)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:write-attribute(name=rotate-size, value=ROTATE_SIZE)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:write-attribute(name=max-backup-index, value=MAX_BACKUPS)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:write-attribute(name=append,value=APPEND)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:write-attribute(name=encoding,value=ENCODING)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:write-attribute(name=formatter,value=FORMAT)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE_HANDLER_NAME:write-attribute(name=autoflush,value=AUTO_FLUSH)
+/subsystem=logging/root-logger=ROOT:add-handler(name=PERIODIC_SIZE_HANDLER_NAME)
+
+/subsystem=logging/logger=CATEGORY:add-handler(name=PERIODIC_SIZE_HANDLER_NAME)
+/subsystem=logging/logger=CATEGORY:add-handler(name=PERIODIC_SIZE_HANDLER_NAME)
+
+/subsystem=logging/root-logger=ROOT:remove-handler(name=LOG_HANDLER_NAME)
+/subsystem=logging/periodic-rotating-file-handler=PERIODIC_HANDLER_NAME:remove
+
+################################################################
+/opt/jboss-eap-7.4/bin/jboss-cli.sh
+
+connect
+
+# add new periodic-size-rotating-file-handler
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE:add(append=true,file={relative-to="jboss.server.log.dir",path="server.log"},rotate-size=5000000 ,suffix=".yyyy-MM-dd", encoding="utf-8", autoflush=true,max-backup-index=10,append=true,rotate-on-boot=true)
+/subsystem=logging/root-logger=ROOT:add-handler(name=PERIODIC_SIZE)
+
+# remove default periodic-rotating-file-handler
+/subsystem=logging/root-logger=ROOT:remove-handler(name=FILE)
+/subsystem=logging/periodic-rotating-file-handler=FILE:remove
+
+reload
+
+# remove periodic-size-rotating-file-handler to recreate
+/subsystem=logging/root-logger=ROOT:remove-handler(name=PERIODIC_SIZE)
+/subsystem=logging/periodic-size-rotating-file-handler=PERIODIC_SIZE:remove
