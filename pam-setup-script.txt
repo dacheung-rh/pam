@@ -256,3 +256,6 @@ systemctl status smartrouter.service
 
 custom maven settings
 force offline maven
+    <system-properties>
+        <property name="kie.maven.settings.custom" value="/opt/custom-config/settings.xml"/>
+        <property name="kie.maven.offline.force" value="true"/>
